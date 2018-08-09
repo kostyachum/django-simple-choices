@@ -13,7 +13,8 @@ class EnumChoices:
 
     @classmethod
     def iter(cls):
-        for item in dir(cls):
+        for item_name in dir(cls):
+            item = getattr(cls, item_name)
             if isinstance(item, Choice):
                 yield item
 
