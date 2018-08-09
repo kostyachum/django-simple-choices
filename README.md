@@ -1,4 +1,5 @@
 # django-simple-choices
+Simple enhancemnt for choices structure to use with django models and more
 
 # Usage
 
